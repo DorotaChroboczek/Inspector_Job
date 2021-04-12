@@ -1,0 +1,28 @@
+{% extends "main.html" %}
+{% block title %}Actions{% endblock %}
+{% block content %}
+
+
+
+    <div>
+        {% if actions %}
+            <div>
+                {% for action in object_list %}
+                    <div>{{ forloop.counter }}</div>
+                    <div>{{ action.company }}</div>
+                    <div>{{ action.position }}</div>
+                    <div>{{ action.type }}</div>
+                    <div>{{ action.date }}</div>
+                    <div>{{ action.response_time }}</div>
+                    <div>{{ action.status }}</div>
+                    <div>{{ action.effect }}</div>
+                    <div>{{ action.comment }}</div>
+                    <div>{{ action.conclusions }}</div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p>You have no actions...</p>
+        {% endif %}
+    </div>
+
+{% endblock %}
