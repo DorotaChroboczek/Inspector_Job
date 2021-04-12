@@ -1,0 +1,68 @@
+body {
+    background: rgb(54,217,182);
+    background: linear-gradient(
+            90deg, rgba(254, 241, 96, 1) 0% ,
+            rgba(54,217,182,1) 23%,
+            rgba(0,212,255,1) 50%,
+            rgba(75, 119, 190, 1) 100%);
+}
+
+.center-column {
+    width:1000px;
+    margin: 20px auto;
+    padding:20px;
+    /* background-color: rgb(240, 179, 65); */
+    background-color: rgba(255, 255, 126, 1);
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0 rgba(0,0,0,0.75);
+}
+
+.item-list {
+    align-items: center;
+    /*margin: 10px;*/
+    padding: 20px;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    background-color: rgba(135, 211, 124, 1);
+    /*background-color: rgb(94, 94, 190);*/
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+.item-no {
+    width: 5%;
+}
+
+.item-company {
+    width: 15%;
+}
+
+.item-position {
+    width: 15%;
+}
+
+.item-type .item-status .item-effect {
+    width: 5%;
+}
+
+.item-date .item-res-time {
+    width: 5%;
+}
+
+.item-comment .item-conclusions {
+    width: 20%;
+}
+

@@ -1,28 +1,44 @@
 {% extends "main.html" %}
+
 {% block title %}Actions{% endblock %}
 {% block content %}
 
+    <div class="center-column">
 
-
-    <div>
         {% if actions %}
-            <div>
+
+            <div class="item-list">
+
                 {% for action in object_list %}
-                    <div>{{ forloop.counter }}</div>
-                    <div>{{ action.company }}</div>
-                    <div>{{ action.position }}</div>
-                    <div>{{ action.type }}</div>
-                    <div>{{ action.date }}</div>
-                    <div>{{ action.response_time }}</div>
-                    <div>{{ action.status }}</div>
-                    <div>{{ action.effect }}</div>
-                    <div>{{ action.comment }}</div>
-                    <div>{{ action.conclusions }}</div>
+                    <div class="item-row">
+                        <div class="item-no">{{ forloop.counter }}</div>
+                        <div class="item-company">{{ action.company }}</div>
+                        <div class="item-position">{{ action.position }}</div>
+                        <div class="item-type">{{ action.type }}</div>
+                        <div class="item-date">{{ action.date }}</div>
+                        <div class="item-res-time">{{ action.response_time }}</div>
+                        <div class="item-status">{{ action.status }}</div>
+                        <div class="item-effect">{{ action.effect }}</div>
+
+                        {% if action.comment is None %}
+                            <div class="item-comment">Add comment</div>
+                        {% else %}
+                            <div class="item-comment">{{ action.comment }}</div>
+                        {% endif %}
+
+                        {% if action.conclusions is None %}
+                            <div class="item-conclusions">Add conclusions</div>
+                        {% else %}
+                            <div class="item-conclusions">{{ action.conclusions }}</div>
+                        {% endif %}
+                    </div>
                 {% endfor %}
+
             </div>
         {% else %}
             <p>You have no actions...</p>
         {% endif %}
+
     </div>
 
 {% endblock %}
