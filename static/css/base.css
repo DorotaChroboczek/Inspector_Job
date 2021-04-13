@@ -59,45 +59,85 @@ table {
     width: 100%;
 }
 
-th {
-    align-content: center;
-    font-family: "Segoe UI Black";
-    font-size: 23px;
-    font-weight: 500;
-    justify-content: space-between;
+.column-title {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-content: space-around;*/
+    /*align-items: center;*/
 }
 
-th.item-no {
+.action-box {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    /*text-align: center;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
+}
+
+.item > p {
+    /*text-align: center;*/
+    font-family: "Ink Free";
+    font-size: 15px;
+    align-content: center;
+}
+
+.cl {
+    align-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.cl > p {
+    /*text-align: center;*/
+    font-family: "Ink Free";
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.no {
     width: 5%;
 }
 
-th.item-type {
-    width: 11%;
+.type {
+    width: 9%;
 }
 
-th.item-date, th.item-res-time {
+.date, .res-time {
+    width: 9%;
+}
+
+.company, .position {
     width: 12%;
 }
 
-th.item-company, th.item-position {
-    width: 20%;
-    /*width: 35%;*/
+.status, .effect{
+    width: 10%;
 }
 
-th.item-status, th.item-effect{
-    width: 20%;
+.comment, .conclusions {
+    width: 12%;
 }
 
-
-th.item-comment, th.item-conclusions {
+.item-comment, .item-conclusions {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
     word-wrap: break-word;
 }
 
 
 .date-box {
-    display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 10px;
 }
 
 .day > p {
@@ -111,19 +151,104 @@ th.item-comment, th.item-conclusions {
 }
 
 .year > p {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 200;
+    margin-top: -16px;
+    text-align: center;
 }
 
-.month-year {
-    align-items: center;
-    margin-right: 5px;
+.month-day {
+    align-items: flex-end;
+    justify-content: center;
+
+    margin-right: 35px;
 }
 
-.month {
-    margin-bottom: 4px;
-}
+/*.month {*/
+/*    margin-top: 24px;*/
+/*}*/
 
-.year {
-    margin-bottom: 4px;
-}
+/*.year {*/
+/*    margin-bottom: 24px;*/
+/*}*/
+
+
+/*FOR TABLE:*/
+
+/*table {*/
+/*    width: 100%;*/
+/*}*/
+
+/*th {*/
+/*    align-content: center;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*th > p {*/
+/*    align-content: center;*/
+/*    font-family: "Segoe UI Black";*/
+/*    font-size: 23px;*/
+/*    font-weight: 500;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*th.item-no {*/
+/*    width: 5%;*/
+/*}*/
+
+/*th.item-type {*/
+/*    width: 11%;*/
+/*}*/
+
+/*th.item-date, th.item-res-time {*/
+/*    width: 12%;*/
+/*}*/
+
+/*th.item-company, th.item-position {*/
+/*    width: 20%;*/
+/*    !*width: 35%;*!*/
+/*}*/
+
+/*th.item-status, th.item-effect{*/
+/*    width: 20%;*/
+/*}*/
+
+
+/*th.item-comment, th.item-conclusions {*/
+/*    word-wrap: break-word;*/
+/*}*/
+
+
+/*.date-box {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.day > p {*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.month > p {*/
+/*    font-size: 14px;*/
+/*    font-weight: 300;*/
+/*}*/
+
+/*.year > p {*/
+/*    font-size: 10px;*/
+/*    font-weight: 200;*/
+/*}*/
+
+/*.month-year {*/
+/*    align-items: center;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.month {*/
+/*    margin-bottom: 4px;*/
+/*}*/
+
+/*.year {*/
+/*    margin-bottom: 4px;*/
+/*}*/
