@@ -1,0 +1,254 @@
+body {
+    background: linear-gradient(
+            90deg, rgba(146, 144, 144, 1) 0%,
+            rgba(237, 236, 236, 1) 30%,
+            rgba(255, 255, 255, 1) 70%);
+}
+
+.column {
+    background: rgb(54,217,182);
+    background: linear-gradient(
+            90deg, rgba(254, 241, 96, 1) 0% ,
+            rgba(54,217,182,1) 23%,
+            rgba(0,212,255,1) 50%,
+            rgba(75, 119, 190, 1) 100%);
+    width:1200px;
+    margin: 20px auto;
+    padding:20px;
+    /* background-color: rgb(240, 179, 65); */
+    background-color: rgba(255, 255, 126, 1);
+    border-radius: 3px;
+    box-shadow: 6px 2px 30px 0 rgba(0,0,0,0.75);
+}
+
+.item-list {
+    align-items: center;
+    /*margin: 10px;*/
+    padding: 20px;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    background-color: rgba(135, 211, 124, 1);
+    /*background-color: rgb(94, 94, 190);*/
+    margin: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+/*.table-responsive {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+
+/*table, th, td {*/
+/*    border: 1px solid black;*/
+/*}*/
+
+table {
+    width: 100%;
+}
+
+.column-title {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-content: space-around;*/
+    /*align-items: center;*/
+}
+
+.action-box {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    /*text-align: center;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
+}
+
+.item > p {
+    /*text-align: center;*/
+    font-family: "Ink Free";
+    font-size: 15px;
+    align-content: center;
+}
+
+.cl {
+    align-content: center;
+    align-items: center;
+    /*text-align: center;*/
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.cl > p {
+    /*text-align: center;*/
+    font-family: "Ink Free";
+    font-size: 21px;
+    font-weight: 600;
+
+}
+
+.no {
+    width: 5%;
+}
+
+.type {
+    width: 9%;
+}
+
+.date, .res-time {
+    width: 9%;
+}
+
+.company, .position {
+    width: 12%;
+}
+
+.status, .effect{
+    width: 10%;
+}
+
+.comment, .conclusions {
+    width: 12%;
+}
+
+.item-comment, .item-conclusions {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+
+.date-box {
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.day > p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.month > p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.year > p {
+    font-size: 11px;
+    font-weight: 200;
+    margin-top: -16px;
+    text-align: center;
+}
+
+.month-day {
+    align-items: flex-end;
+    justify-content: center;
+
+    margin-right: 35px;
+}
+
+/*.month {*/
+/*    margin-top: 24px;*/
+/*}*/
+
+/*.year {*/
+/*    margin-bottom: 24px;*/
+/*}*/
+
+
+/*FOR TABLE:*/
+
+/*table {*/
+/*    width: 100%;*/
+/*}*/
+
+/*th {*/
+/*    align-content: center;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*th > p {*/
+/*    align-content: center;*/
+/*    font-family: "Segoe UI Black";*/
+/*    font-size: 23px;*/
+/*    font-weight: 500;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*th.item-no {*/
+/*    width: 5%;*/
+/*}*/
+
+/*th.item-type {*/
+/*    width: 11%;*/
+/*}*/
+
+/*th.item-date, th.item-res-time {*/
+/*    width: 12%;*/
+/*}*/
+
+/*th.item-company, th.item-position {*/
+/*    width: 20%;*/
+/*    !*width: 35%;*!*/
+/*}*/
+
+/*th.item-status, th.item-effect{*/
+/*    width: 20%;*/
+/*}*/
+
+
+/*th.item-comment, th.item-conclusions {*/
+/*    word-wrap: break-word;*/
+/*}*/
+
+
+/*.date-box {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-around;*/
+/*}*/
+
+/*.day > p {*/
+/*    font-size: 18px;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.month > p {*/
+/*    font-size: 14px;*/
+/*    font-weight: 300;*/
+/*}*/
+
+/*.year > p {*/
+/*    font-size: 10px;*/
+/*    font-weight: 200;*/
+/*}*/
+
+/*.month-year {*/
+/*    align-items: center;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+/*.month {*/
+/*    margin-bottom: 4px;*/
+/*}*/
+
+/*.year {*/
+/*    margin-bottom: 4px;*/
+/*}*/
